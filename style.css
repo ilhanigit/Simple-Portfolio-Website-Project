@@ -1,0 +1,281 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+#home {
+  background-color: rgb(13, 13, 119);
+  padding: 1cm 0;
+  color: white;
+}
+
+.topmenu {
+  color: lightgray;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.topmenu:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+
+.profile_name {
+  color: black;
+  margin-top: 192px;
+  margin-right: 42px;
+  float: left;
+  padding-left: 2cm;
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+.profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.profile_name .contact_info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* About Me */
+#about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2cm 0;
+  background-color: rgb(31, 31, 129);
+  color: white;
+}
+
+.aboutmephoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+#about-me h1 {
+  font-size: 2em;
+}
+
+#about-me p {
+  width: 400px;
+  text-align: justify;
+}
+
+/* Skills */
+#Skills {
+  background-color: #262626;
+  color: white;
+  padding: 1.5cm 0;
+  text-align: center;
+}
+
+#Skills h2 {
+  font-size: 2.5em;
+  margin-bottom: 1cm;
+}
+
+.all_skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin: 20px;
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.skill h6 {
+  margin: 10px 0;
+}
+
+/* Projects */
+.projects {
+  background-color: #f4f4f4;
+  padding: 1.5cm 0;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5em;
+  margin-bottom: 1cm;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Recommendations */
+#Recommendations {
+  background-color: #262626;
+  color: white;
+  padding: 1.5cm 0;
+  text-align: center;
+}
+
+#Recommendations h2 {
+  font-size: 2.5em;
+  margin-bottom: 1cm;
+}
+
+.all_recommendations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.recommendation {
+  background-color: #333333;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: justify;
+}
+
+/* Recommendation Form */
+#contact {
+  background-color: #f4f4f4;
+  padding: 2cm 0;
+  text-align: center;
+}
+
+fieldset {
+  border: 2px solid rgb(31, 31, 129);
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introduction {
+  font-size: 1.5em;
+  color: rgb(31, 31, 129);
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgb(31, 31, 129);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(13, 13, 119);
+}
+
+/* Back to Top Button */
+.iconbutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(31, 31, 129);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iconbutton a {
+  color: white;
+  text-decoration: none;
+}
+
+.iconbutton:hover {
+  background-color: rgb(13, 13, 119);
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup h3 {
+  color: rgb(31, 31, 129);
+  margin-bottom: 20px;
+}
+
+.popup button {
+  background-color: rgb(31, 31, 129);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: rgb(13, 13, 119);
+}
